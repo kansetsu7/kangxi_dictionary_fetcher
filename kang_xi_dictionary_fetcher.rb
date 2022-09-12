@@ -45,7 +45,7 @@ class KangXiDictionaryFetcher
 
     def write_to_file(data)
       puts "Write to file..."
-      file = File.open('strokes_and_characters.txt', 'w')
+      file = File.open('result/kang_xi_dictionary.txt', 'w')
       data.each do |strokes, chars|
         file.write("#{strokes.to_s.rjust(2)}, #{chars}\n")
       end
